@@ -1,0 +1,35 @@
+body{
+    background-color: #042a2b
+}
+
+#user {
+    background-color:#D84727;
+    color: white;
+    height: 100%;
+    width: 15%;
+    padding: 18px;
+    border-radius: 1rem;
+}
+
+#username {
+    background-color:#5eb5bf;
+    height: 60px;
+    width: 15%;
+    border-radius: 1rem;
+}
+
+#pass{
+    background-color:#5eb5bf;
+    height: 100%;
+    padding: 18px;
+    width: 15%;
+    border-radius: 1rem;
+}
+
+#password {
+    background-color:#D84727;
+    color: white;
+    height: 60px;
+    width: 15%;
+    border-radius: 1rem;
+}

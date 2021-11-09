@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-between" id="top-row">
+      <img src="./search/logo.png">
+      <button type="button" id="logout">Log Out</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" id="savedSearches">Saved Searches</button>
+      <button type="button" id="clearSearches">Clear Saved Searches</button>
+    </div>
+    <!-- Will need to dynamically populate movie cards here -->
+    <!-- <div class="d-flex justify-content-center" id="card-container"></div> -->
+
+    <div class="d-flex justify-content-center">
+      <button type="button" class="genreButton" id="family">Family</button>
+      <button type="button" class="genreButton" id="action">Action</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="genreButton" id="horror">Horror</button>
+      <button type="button" class="genreButton" id="drama">Drama</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="genreButton" id="comedy">Comedy</button>
+      <button type="button" class="genreButton" id="romance">Romance</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="button" id="searchPrompt">Search for Movie by Title</button>
+      <input type="text" id="movieTitle" value="Enter Movie Title..."></input>
+      <button type="submit" id="movieSubmission">Submit</button>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
