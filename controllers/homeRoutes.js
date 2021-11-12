@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const favorite = favoriteData.map((favorite) => project.get({ plain: true }));
+    const favorite = favoriteData.map((favorite) => favorite.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('login', {
-      projects,
+    res.render('search', {
+      favorite,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -27,9 +27,9 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/favorite/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const favoriteData = await Favorite.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -37,10 +37,10 @@ router.get('/project/:id', async (req, res) => {
       ],
     });
 
-    const project = projectData.get({ plain: true });
+    const favorite = favoriteData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('favorite', {
+      ...favorite,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -54,7 +54,7 @@ router.get('/search', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Favorite }],
     });
 
     const user = userData.get({ plain: true });
