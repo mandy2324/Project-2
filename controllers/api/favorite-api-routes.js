@@ -22,18 +22,4 @@ router.get('/movie/:movie', async (req, res) => {
   console.log(fetch_res.data);
 });
 
-// function displayMovie(data) {
-//   const movie = results[0];
-//   const movieDiv = document.getElementById('movie');
-//   const movieName = results[0].title;
-//   const heading = document.createElement('h1');
-//   heading.innerHTML = movieName;
-//   movieDiv.appendChild(heading);
-//   const movieImg = document.createElement('img');
-//   movieImg.src = results[0].poster_path;
-//   movieDiv.appendChild(movieImg);
-//   document.body.style.backgroundImage =
-//     "url('" + results[0].backdrop_path + "')";
-// }
-
 module.exports = router;
