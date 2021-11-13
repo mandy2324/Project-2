@@ -25,9 +25,10 @@ nav {
 }
 
 .favorites {
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #savedSearches {
@@ -172,4 +173,10 @@ h6 {
 .heart {
   background-color: red;
   height: 20px;
+}
+
+.movie-card {
+  height: 35rem;
+  width: 18rem;
+  margin: 5px 5px;
 }

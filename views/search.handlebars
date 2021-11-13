@@ -1,7 +1,7 @@
     <div class="d-flex justify-content-between" id="top-row">
-            <div class='searchBrand'>
+            <a href="search" class='searchBrand'>
               <img src='/images/logo.png' alt='Movie Mania Logo' />
-            </div>
+            </a>
       <button type="button" class="btn btn-light" id="logout">Log Out</button>
     </div>
     </br>
@@ -14,26 +14,7 @@
     <!-- Will need to dynamically populate movie cards and what info we're providing here -->
 
     <div class="d-flex favorites" id="card-container">
-      <div class="card" style="height: 35rem; width: 18rem;">
-        <img src="../images/notavail.png">
-        <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Release Date.</p>
-        <p class="card-text">Movie details about the movie .</p>
-        <div class="clk heart">
-          <button class="btn btn-primary container-fluid"><i class="far fa-heart"></i></button>
-        </div>  
-      </div>
-      </div><div class="card" style="height: 35rem; width: 18rem;">
-        <img src="../images/notavail.png">
-        <div class="card-body">
-        <h5 class="card-title">Movie Title</h5>
-        <p class="card-text">Release Date.</p>
-        <p class="card-text">Movie details about the movie .</p>
-        <div class="clk heart">
-          <button class="btn btn-primary container-fluid"><i class="far fa-heart"></i></button>
-        </div>  
-      </div>
+      {{!-- 
       </div><div class="card" style="height: 35rem; width: 18rem;">
         <img src="../images/notavail.png">
         <div class="card-body">
@@ -44,7 +25,7 @@
           <button class="btn btn-primary container-fluid"><i class="far fa-heart"></i></button>
         </div>      
       </div>
-      </div>
+      </div> --}}
       
     </div>
 
