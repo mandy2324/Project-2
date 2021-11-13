@@ -1,122 +1,175 @@
-h1 {
-    font-family: 'Shadows Into Light', cursive;
-    color: #004d40;
-    font-size: 5em;
-    margin: 0.67em 0;
+body {
+  height: 100%;
+  background-color: #042a2b;
 }
 
 nav {
-    color: #fff;
-    background-color: #b6d5d3;
-    width: 100%;
-    height: 110px;
-    line-height: 56px;
-    padding-top: 7px;
+  color: #fff;
+  background-color: #b6d5d3;
+  width: 100%;
+  height: 110px;
+  line-height: 56px;
+  padding-top: 7px;
+}
+
+.brand img {
+  width: 400px;
+  height: 400px;
+  margin-left: 35%;
+}
+
+.searchBrand img {
+  width: 400px;
+  height: 400px;
+  margin: -35% 0;
+}
+
+.favorites {
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#savedSearches {
+  margin-right: 10px;
+  background-color: #ffd904;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#clearSearches:hover {
+  background-color: #cdedf6;
+  color: #042a2b;
+}
+
+.genreButton:hover {
+  background-color: #cdedf6;
+  color: #042a2b;
 }
 
 .statement .mdl-card__media {
-    background-image: url('/assets/img/smogbig.png');
+  background-image: url('/assets/img/smogbig.png');
 }
 
 .mission-statement {
-    font-family: 'Oswald', sans-serif;
-    color: #ffff;
-    font-size: 1.5em;
-    margin: 0;
-    padding-left: 5px;
+  font-family: 'Oswald', sans-serif;
+  color: #ffff;
+  font-size: 1.5em;
+  margin: 0;
+  padding-left: 5px;
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
-    color: #00635A;
-    font-size: 1.5em;
-    margin: 0;
-    padding-left: 5px;
+  font-family: 'Oswald', sans-serif;
+  color: #00635a;
+  font-size: 1.5em;
+  margin: 0;
+  padding-left: 5px;
 }
 
 h3 {
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
-    font-size: 3em;
-    margin: 0.67em 0;
-    padding-left: 20px;
-    padding-top: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0.67em 0;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 h6 {
-    font-family: 'Oswald', sans-serif;
-    color: #ffffff;
-    font-size: 1em;
-    margin: 0.67em 0;
-    padding-left: 20px;
-    padding-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0.67em 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
-
 
 /* AQI table colors  */
 
 .aqi-green {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #64E572;
-    color: #000000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #64e572;
+  color: #000000;
 }
 
 .aqi-yellow {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #FFFF0D;
-    color: #000000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #ffff0d;
+  color: #000000;
 }
 
 .aqi-orange {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #FF9C00;
-    color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #ff9c00;
+  color: #ffffff;
 }
 
 .aqi-red {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #FF0000;
-    color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #ff0000;
+  color: #ffffff;
 }
 
 .aqi-purple {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #700C8F;
-    color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #700c8f;
+  color: #ffffff;
 }
 
 .aqi-maroon {
-    font-family: "Oswald", sans-serif;
-    font-size: 1.5em;
-    border-width: 2px;
-    padding-left: 15px;
-    border-style: solid;
-    border-color: #FFF;
-    background-color: #820E22;
-    color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  border-width: 2px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #820e22;
+  color: #ffffff;
+}
+
+#logout {
+  height: 40px;
+  width: 100px;
+  margin-right: 4%;
+}
+
+#logout:hover {
+  background-color: #cdedf6;
+  color: #042a2b;
+}
+
+.green {
+  background-color: rgb(0, 255, 0);
+}
+
+.heart {
+  background-color: red;
+  height: 20px;
 }

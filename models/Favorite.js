@@ -1,26 +1,35 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Favorite extends Model {}
 
-Project.init(
+Favorite.init(
   {
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    release_date: {
+      type: DataTypes.INTEGER,
+    },
+    poster_path: {
+      type: DataTypes.STRING,
+    },
+    backdrop_path: {
+      type: DataTypes.STRING,
+    },
+    overview: {
       type: DataTypes.STRING,
     },
   },
-  
+
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'favorite',
   }
 );
 
-module.exports = Project;
+module.exports = Favorite;
