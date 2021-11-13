@@ -53,23 +53,23 @@ This is an Interactive Full-Stack Application.
 
 ### Lyman Connor
 
-- [Github](link)
+- [Github](https://github.com/Xckz)
 - [Linkedin](link)
 
 ### Alex Brandon
 
-- [Github](link)
+- [Github](https://github.com/alexbrandon3)
 - [Linkedin](link)
 
 ### Cody Ktestakis
 
-- [Github](link)
-- [Linkedin](link)
+- [Github](https://github.com/Cktestakis)
+- [Linkedin](https://www.linkedin.com/in/cody-ktestakis/)
 
 ### Mandeep Saini
 
-- [Github](link)
-- [Linkedin](link)
+- [Github](https://github.com/mandy2324)
+- [Linkedin](https://www.linkedin.com/in/m23saini/)
 
 ### Liliana Toufiles
 
