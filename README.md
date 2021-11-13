@@ -1,94 +1,79 @@
-# Unit 14 Mini-Project: Crowdfunding App
+# Project 2. Movie Mania
 
-In this mini-project, you will work with a group to build a full-stack crowdfunding app using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
+This is an Interactive Full-Stack Application.
 
 ## User Stories
 
-* As a user, I want to see a list of current projects seeking funding.
+- As a user, I want to make a web application which allows a user to browse movies using movie api and view details about the movie.
 
-* As a user, I want to be able to create an account.
+- This application allows user to save the movie description so that they can view thier saved movie prefrences and share them later.
 
-* As a registered user, I want to post my own projects to ask for funding.
+- A user,can create an account, login and log out the application.
 
-### Acceptance Criteria
+### Framework Specifications:
 
-* It's done when the `/` homepage route renders a list of all projects from the database.
+- Node.js and Express.js to create a RESTful API.
 
-* It's done when the `/project/:id` route renders an individual project's details based on the route parameter id.
+- Handlebars.js as the template engine.
 
-* It's done when the `/login` route renders a form to log in and a form to create a new account.
+- MySQL and the Sequelize ORM for the database.
 
-* It's done when an existing user can enter their credentials on the login page to create a session on the server.
+- Have both GET and POST routes for retrieving and adding new data.
 
-* It's done when a new user can create an account on the login page and then be immediately logged in with a session.
+- Have a folder structure that meets the MVC paradigm.
 
-* It's done when the `/profile` route renders the logged-in user's projects and a form to create a new project.
+- It Includes an authentication (express-session and cookies).
 
-* It's done when only a logged in user can visit the `/profile` route.
+- Protect API keys and sensitive information with environment variables.
 
-* It's done when a logged in user is redirected to `/profile` when they try to visit `/login` again.
+## Deployed link:
 
-* It's done when a user on the profile page can use the form to create a new project in the database.
+[Heroku](link)
 
-* It's done when a user on the profile page can select a "Delete" button to remove their project from the database.
+## Github Repo Link:
 
-* It's done when a logged-in user can select a "Logout" button to remove their session.
+[Movie Mania](https://github.com/mandy2324/Project-2.git)
 
-* It's done when the API routes to create and delete posts are protected from non logged-in users.
+## packages used:
 
-* It's done when the code is organized using MVC architecture.
+- eslint
+- prettier
+- auth
+- axios
+- bcrypt
+- connect-session-sequelize
+- dotenv
+- express
+- express-handlebars
+- express-session
+- mysql2
+- sequelize
 
-* It's done when the views are rendered with Handlebars.js templates.
+## Authors:
 
-## Specifications 
+### Lyman Connor
 
-* The database models have the following fields and associations:
+- [Github](link)
+- [Linkedin](link)
 
-  * `User`
+### Alex Brandon
 
-    * `id`: primary key
+- [Github](link)
+- [Linkedin](link)
 
-    * `name`
+### Cody Ktestakis
 
-    * `email`
+- [Github](link)
+- [Linkedin](link)
 
-    * `password`
+### Mandeep Saini
 
-  * `Project`
+- [Github](link)
+- [Linkedin](link)
 
-    * `id`: primary key
+### Liliana Toufiles
 
-    * `name`
+- [Github](link)
+- [Linkedin](link)
 
-    * `description`
-
-    * `date_created`
-
-    * `needed_funding`
-
-    * `user_id`: foreign key that references `User.id`
-
-  * Users have many projects, and projects belong to a user.
-
-    * If a user is deleted, all associated projects are also deleted.
-
----
-
-## 💡 Hints
-
-* What tools can you use to test the existing API routes if you don't yet have a front end?
-
-* Where would you place the client-side JavaScript for capturing form data?
-
-* How can middleware help protect routes from non logged-in users?
-
-* How can Handlebars.js helpers (both built-in and custom) be used to render the desired results?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
-
-* Add an `/edit/:id` route for logged in users to update their projects' details. Then deploy the app to Heroku!
-
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Application Images:
