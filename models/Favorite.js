@@ -5,19 +5,37 @@ class Favorite extends Model {}
 
 Favorite.init(
   {
-    name: {
+
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    release_date: {
+      type: DataTypes.INTEGER,
+    },
+    poster_path: {
       type: DataTypes.STRING,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+    backdrop_path: {
+      type: DataTypes.STRING,
+    },
+    overview: {
+      type: DataTypes.STRING,
+// =======
+//     name: {
+//       type: DataTypes.STRING,
+//       allowNull: false,
+//     },
+//     description: {
+//       type: DataTypes.STRING,
+//     },
+//     user_id: {
+//       type: DataTypes.INTEGER,
+//       references: {
+//         model: 'user',
+//         key: 'id',
+//       },
+// >>>>>>> main
     },
   },
 

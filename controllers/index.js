@@ -6,5 +6,6 @@ const feRoutes = require('./feRoutes');
 
 router.use('/', feRoutes);
 router.use('/api', apiRoutes);
+router.use('/homeRoutes', homeRoutes);
 
 module.exports = router;
