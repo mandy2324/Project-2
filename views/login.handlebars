@@ -27,7 +27,7 @@
             <div class='card fat'>
               <div class='card-body'>
                 <h4 class='card-title'>Login</h4>
-                <form method='POST' class='my-login-validation' novalidate=''>
+                <form class='my-login-validation' method="post" onsubmit='loginFormHandler(event)'>
                   <div class='form-group'>
                     <label for='email'>E-Mail Address</label>
                     <input
@@ -80,11 +80,9 @@
 
                   <div class='form-group m-0'>
 
-                    <a href='loggedin'>
-                      <button type='submit' class='btn btn-primary btn-block'>
+                      <button type='submit' id="loginButton" class='btn btn-primary btn-block'>
                         Login
                       </button>
-                    </a>
                   </div>
                   <div class='mt-4 text-center'>
                     Don't have an account?
