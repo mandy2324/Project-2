@@ -1,14 +1,63 @@
-<div class='d-flex justify-content-between' id='top-row'>
-  <img src='./logo.png' />
-  <button type='button' id='logout'>Log Out</button>
-</div>
-<div class='d-flex justify-content-center'>
-  <button type='button' id='details'>Movie Details</button>
-  <button type='button' id='homeButton'>Home</button>
-</div>
+<main>
+   <div class="movie-wrapper"
+      style="background-image: {{backdrop_path}}'">
 
-<!-- We'll need to dynamically populate everything here from our OMDB API -->
+      {{#if id}}
 
-<div class='d-flex justify-content-center'>
-  <button type='button' id='return'>Return to Home</button>
-</div>
+      <div class="backdrop_path">
+         <div class="grid-x">
+            <div class="cell medium-5 small-12 vcenter"><img class="poster center_image shad"
+                  src="{{poster_path}}">
+
+            </div>
+
+
+            <div class="cell medium-7 summary">
+               <div class="grid-x">
+                  <div class="cell orange lighten-1  shad">
+
+                     <div class="dataTitle vcenter " id="title-to-grab">
+                        <h1>{{title}} </h1><span class="date">({{release_date}})</span>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="grid-x ">
+                  <div class="cell">
+                     <div class="grid-x">
+                        <div class="cell vcenter makeWhite">
+                           <p><span>Runtime: {{runtime}}</span> <span>Budget: ${{budget}}</span></p>
+                        </div>
+
+                        <div class="cell vcenter makeWhite">
+                           <p>{{#each genres}} <span>{{name}} |</span> {{/each}}</p>
+                        </div>
+                     </div>
+
+
+                     <h4 class="vcenter summary makeWhite">{{tagline}}</h4>
+                  </div>
+               </div>
+               {{#if isLoggedIn}}
+
+               <div class="grid-x ">
+                  <div class="cell vcenter">
+                     <div id="buttons">
+                        <button class="wishlist-button waves-effect waves-light btn-small orange btns" data-id="{{id}}"
+                           data-poster="{{poster_path}}" data-title="{{title}}"><i
+                              class="material-icons left">add</i>Add to Favorites</button> 
+                     </div>
+                  </div>
+               </div>
+
+               <div class="summary vcenter makeWhite">
+                  {{overview}}
+               </div>
+            </div>
+         </div>
+         {{else}} Sorry, No Movie Found By This ID {{/if}}
+      </div>
+   </div>
+
+</main>
