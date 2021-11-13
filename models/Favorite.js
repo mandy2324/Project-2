@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Favorite extends Model {}
 
-Project.init(
+Favorite.init(
   {
     name: {
       type: DataTypes.STRING,
@@ -12,15 +12,22 @@ Project.init(
     description: {
       type: DataTypes.STRING,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
+    },
   },
-  
+
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'favorite',
   }
 );
 
-module.exports = Project;
+module.exports = Favorite;
