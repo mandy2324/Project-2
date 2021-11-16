@@ -7,11 +7,7 @@ User.hasMany(Favorite, {
 });
 
 Favorite.belongsTo(User, {
-
   foreignKey: 'user_id',
-// =======
-//   foreignKey: 'user_id'
-// >>>>>>> main
 });
 
 module.exports = { User, Favorite };

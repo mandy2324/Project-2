@@ -6,12 +6,33 @@
     </div>
     </br>
     </br>
-    <div class="d-flex justify-content-center">
-      <div class="col-7" id="savedSearches">Saved Searches</div>
-      <button type="button" class="col-4" id="clearSearches">Clear Favorites</button>
-    </div>
+    <a href="favorites" class="d-flex justify-content-center saved-searches">
+      <button class="col-12" id="savedSearch">Saved Searches</button>
+    </a>
 
     <!-- Will need to dynamically populate movie cards and what info we're providing here -->
+
+    <!-- DELETE EVERYTHING ABOVE ONCE API IS LINKED PROPERLY -->
+    <div class="searchOptions">
+      <div class="d-flex justify-content-center">
+        <button type="button" class="genreButton col-3" id="family" onclick="familySearch();">Family</button>
+        <button type="button" class="genreButton col-3" id="action" onclick="actionSearch();">Action</button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="genreButton col-3" id="horror" onclick="horrorSearch();">Horror</button>
+        <button type="button" class="genreButton col-3" id="drama" onclick="dramaSearch();">Drama</button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="genreButton col-3" id="comedy" onclick="comedySearch();">Comedy</button>
+        <button type="button" class="genreButton col-3" id="romance" onclick="romanceSearch();">Romance</button>
+      </div>
+      </br>
+      </br>
+      <div class="d-flex justify-content-center">
+        <input type="text" class="col-2" id="movie_input" placeholder="Enter Movie Title..."></input>
+        <button type="button" class="col-2" id="movie_search" onclick="movieSearch();">Search for Movie by Title</button>
+      </div>
+    </div>
 
     <div class="d-flex favorites" id="card-container">
       {{!-- 
@@ -26,27 +47,7 @@
         </div>      
       </div>
       </div> --}}
-      
     </div>
 
-    <!-- DELETE EVERYTHING ABOVE ONCE API IS LINKED PROPERLY -->
-
-    <div class="d-flex justify-content-center">
-      <button type="button" class="genreButton col-3" id="family" onclick="familySearch();">Family</button>
-      <button type="button" class="genreButton col-3" id="action" onclick="actionSearch();">Action</button>
-    </div>
-    <div class="d-flex justify-content-center">
-      <button type="button" class="genreButton col-3" id="horror" onclick="horrorSearch();">Horror</button>
-      <button type="button" class="genreButton col-3" id="drama" onclick="dramaSearch();">Drama</button>
-    </div>
-    <div class="d-flex justify-content-center">
-      <button type="button" class="genreButton col-3" id="comedy" onclick="comedySearch();">Comedy</button>
-      <button type="button" class="genreButton col-3" id="romance" onclick="romanceSearch();">Romance</button>
-    </div>
-    </br>
-    </br>
-    <div class="d-flex justify-content-center">
-      <input type="text" class="col-2" id="movie_input" placeholder="Enter Movie Title..."></input>
-      <button type="button" class="col-2" id="movie_search" onclick="movieSearch();">Search for Movie by Title</button>
-    </div>
+    <button onclick="topFunction()" id="goBackTop" title="Go to top">Go Back to Top</button>
   
