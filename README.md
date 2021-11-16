@@ -52,7 +52,7 @@ This is an Interactive Full-Stack Application.
 
 ## Deployed link:
 
-[Heroku](link)
+[Heroku](https://moviemania000.herokuapp.com/)
 
 ## Github Repo Link:
 
