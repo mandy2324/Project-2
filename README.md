@@ -2,13 +2,37 @@
 
 This is an Interactive Full-Stack Application.
 
-## User Stories
+## Application concept:
 
 - As a user, I want to make a web application which allows a user to browse movies using movie api and view details about the movie.
 
-- This application allows user to save the movie description so that they can view thier saved movie prefrences and share them later.
+- The USER creates an account providing a NAME, an EMAIL, and a PASSWORD.
 
-- A user,can create an account, login and log out the application.
+- The USER can then LOG IN with the correct CREDENTIALS.
+
+- THE USER will then be taken to a HOME PAGE with a SEARCH area.
+
+  a. The HOME PAGE consists of MOVIE POSTERS that the USER has FAVORITED.
+
+  b. THE SEARCH area has BUTTONS that correspond to specific GENRES.
+
+  b-1. The BUTTONS each take the USER to the specified GENRE.
+
+  b-2. The SEARCH area has an input field for the USER to search for a MOVIE TITLE.
+
+- Upon clicking a GENRE or searching a MOVIE TITLE the page is populated with MOVIES based on the USER'S REQUEST.
+
+- The USER is given the capability of saving the MOVIES to their FAVORITES by clicking the HEART at the bottom of the MOVIE CARDS.
+
+- Should the USER not find a MOVIE that they want to FAVORITE, they may return HOME by clicking the 'HOME' ICON in the Upper Right and SEARCH AGAIN.
+
+- The USER can click on a POSTER and be taken to a page with DETAILS about the MOVIE such as a DESCRIPTION and CRITIC REVIEWS.
+
+- The USER will still be able to FAVORITE the MOVIE on this page.
+
+- When the USER is finished FAVORITING MOVIES they may RETURN HOME to view all of their FAVORITES.
+
+- If the USER does not want to risk their FAVORITES being changed by someone else, then the USER should click 'LOG OUT' in the Upper Right.
 
 ### Framework Specifications:
 
@@ -24,7 +48,7 @@ This is an Interactive Full-Stack Application.
 
 - It Includes an authentication (express-session and cookies).
 
-- Protect API keys and sensitive information with environment variables.
+- Protected API keys and sensitive information.
 
 ## Deployed link:
 
@@ -54,7 +78,7 @@ This is an Interactive Full-Stack Application.
 ### Lyman Connor
 
 - [Github](https://github.com/Xckz)
-- [Linkedin](link)
+- [Linkedin](https://www.linkedin.com/in/lyman-connor/)
 
 ### Alex Brandon
 
@@ -70,10 +94,5 @@ This is an Interactive Full-Stack Application.
 
 - [Github](https://github.com/mandy2324)
 - [Linkedin](https://www.linkedin.com/in/m23saini/)
-
-### Liliana Toufiles
-
-- [Github](link)
-- [Linkedin](link)
 
 ## Application Images:
