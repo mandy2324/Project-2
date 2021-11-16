@@ -11,7 +11,7 @@ router.post('/signup', (req, res) => {
             res.status(500).json(err);
         });
 });
-
+//post route
 router.post('/login', (req, res) => {
   console.log("also here")
   User.findOne({ where: { email: req.body.email } })
