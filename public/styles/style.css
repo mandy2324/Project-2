@@ -31,12 +31,39 @@ nav {
   flex-wrap: wrap;
 }
 
+.movie-card {
+  background: rgb(205, 237, 246);
+  background: linear-gradient(
+    0deg,
+    rgba(205, 237, 246, 1) 0%,
+    rgba(94, 177, 191, 1) 100%
+  );
+}
+
+.movie-poster {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  padding-top: 5px;
+  justify-content: space-around;
+}
+
+#savedSearch {
+  margin-right: 10px;
+  background-color: #ffd904;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
 #savedSearches {
   margin-right: 10px;
   background-color: #ffd904;
   height: 40px;
   text-align: center;
   padding-top: 8px;
+  text-decoration: none;
 }
 
 #clearSearches:hover {
@@ -59,6 +86,16 @@ nav {
   font-size: 1.5em;
   margin: 0;
   padding-left: 5px;
+}
+
+.movie-card-text {
+  font-family: Calibri;
+  font-size: 14px;
+  margin-top: -10;
+}
+
+.saved-searches {
+  text-decoration: none;
 }
 
 h2 {
@@ -166,17 +203,42 @@ h6 {
   color: #042a2b;
 }
 
-.green {
-  background-color: rgb(0, 255, 0);
-}
-
-.heart {
-  background-color: red;
-  height: 20px;
-}
-
 .movie-card {
   height: 35rem;
   width: 18rem;
   margin: 5px 5px;
+  border: 2px solid #ffd904;
+}
+
+.movie-release-date {
+  font-style: italic;
+  color: #d84727;
+}
+
+.saveFavorite {
+  margin-top: -10px;
+}
+
+.searchOptions {
+  padding-top: 5px;
+}
+
+#goBackTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#goBackTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
