@@ -24,13 +24,13 @@ This is an Interactive Full-Stack Application.
 
 - The USER is given the capability of saving the MOVIES to their FAVORITES by clicking the HEART at the bottom of the MOVIE CARDS.
 
-- Should the USER not find a MOVIE that they want to FAVORITE, they may return HOME by clicking the 'HOME' ICON in the Upper Right and SEARCH AGAIN.
+- Should the USER not find a MOVIE that they want to FAVORITE, they may return HOME by clicking the 'HOME' ICON in the Upper Right and SEARCH AGAIN. (Future project feature).
 
-- The USER can click on a POSTER and be taken to a page with DETAILS about the MOVIE such as a DESCRIPTION and CRITIC REVIEWS.
+- The USER can click on a POSTER and be taken to a page with DETAILS about the MOVIE such as a DESCRIPTION and CRITIC REVIEWS. (Future project feature).
 
-- The USER will still be able to FAVORITE the MOVIE on this page.
+- The USER will still be able to FAVORITE the MOVIE on this page.(Future project feature).
 
-- When the USER is finished FAVORITING MOVIES they may RETURN HOME to view all of their FAVORITES.
+- When the USER is finished FAVORITING MOVIES they may RETURN HOME to view all of their FAVORITES(Future project feature).
 
 - If the USER does not want to risk their FAVORITES being changed by someone else, then the USER should click 'LOG OUT' in the Upper Right.
 
@@ -73,6 +73,24 @@ This is an Interactive Full-Stack Application.
 - mysql2
 - sequelize
 
+## Application Images:
+
+### Login page
+
+![Login page](./public/images/login.png)
+
+### sign-up page
+
+![Sign-up page](./public/images/signup.png)
+
+### Search page
+
+![Search page](./public/images/search.png)
+
+### Search Results
+
+![Search results](./public/images/searchMovie.png)
+
 ## Authors:
 
 ### Lyman Connor
@@ -94,5 +112,3 @@ This is an Interactive Full-Stack Application.
 
 - [Github](https://github.com/mandy2324)
 - [Linkedin](https://www.linkedin.com/in/m23saini/)
-
-## Application Images:
